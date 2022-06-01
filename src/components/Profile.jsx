@@ -1,3 +1,5 @@
+import propTypes from 'prop-types';
+
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className="profile">
@@ -29,3 +31,11 @@ export default function Profile({ username, tag, location, avatar, stats }) {
     </div>
   );
 }
+
+Profile.propTypes = {
+  username: propTypes.string.isRequired,
+  tag: propTypes.string.isRequired,
+  location: propTypes.string.isRequired,
+  avatar: propTypes.string.isRequired,
+  stats: propTypes.object.isRequired,
+};
