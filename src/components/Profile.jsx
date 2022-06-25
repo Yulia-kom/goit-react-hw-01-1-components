@@ -2,7 +2,7 @@ import propTypes from 'prop-types';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div className="profile">
+    <div className="Profile">
       <div className="description">
         <img
           src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
